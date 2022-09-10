@@ -21,7 +21,7 @@ export default {
     jwtSecret: env.JwtSecret || 'jwtSecret',
 
     // Maximize the number of groups
-    maxGroupsCount: env.MaxGroupCount ? parseInt(env.MaxGroupCount, 10) : 3,
+    maxGroupsCount: env.MaxGroupCount ? parseInt(env.MaxGroupCount, 10) : 10,
 
     allowOrigin: env.AllowOrigin ? env.AllowOrigin.split(',') : null,
 
