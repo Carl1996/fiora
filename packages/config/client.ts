@@ -6,16 +6,16 @@ export default {
         (process.env.NODE_ENV === 'development' ? '//localhost:9200' : '/'),
 
     maxImageSize: process.env.MaxImageSize
-        ? parseInt(process.env.MaxImageSize, 10)
+        ? parseInt(process.env.MaxImageSize, 100)
         : MB * 100,
     maxBackgroundImageSize: process.env.MaxBackgroundImageSize
-        ? parseInt(process.env.MaxBackgroundImageSize, 10)
+        ? parseInt(process.env.MaxBackgroundImageSize, 150)
         : MB * 15,
     maxAvatarSize: process.env.MaxAvatarSize
-        ? parseInt(process.env.MaxAvatarSize, 10)
+        ? parseInt(process.env.MaxAvatarSize, 150)
         : MB * 15,
     maxFileSize: process.env.MaxFileSize
-        ? parseInt(process.env.MaxFileSize, 10)
+        ? parseInt(process.env.MaxFileSize, 16106127360)
         : MB * 15360,
 
     // client default system setting
