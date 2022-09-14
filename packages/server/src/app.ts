@@ -34,8 +34,8 @@ const io = new Server(httpServer, {
         origin: config.allowOrigin || '*',
         credentials: true,
     },
-    pingTimeout: 10000,
-    pingInterval: 5000,
+    pingTimeout: 180000,
+    pingInterval: 90000,
 });
 
 // serve index.html
